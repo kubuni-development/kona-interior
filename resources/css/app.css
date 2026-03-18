@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-konablack: #070b0c;
+  --color-konabeige: #edeae6;
+  --color-konablack-100:#cbc7c1;
+  --font-sans: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-konabeige text-konablack font-sans;
+  }
+  nav a{
+    @apply font-normal;
+  }
+  h1, h2, h3, h4, h5{
+    @apply font-sans font-bold;
+  }
+  h1{
+    @apply text-6xl leading-tight mb-6;
+  }
+  h2{
+    @apply text-4xl leading-tight mb-4;
+  }
+  h3{
+    @apply text-2xl leading-tight mb-2;
+  }
+  h4{
+    @apply text-xl leading-snug;
+  }
+  p{
+    @apply text-base leading-normal mb-2;
+  }
+}
