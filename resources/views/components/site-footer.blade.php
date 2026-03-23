@@ -8,12 +8,12 @@ Please book your visit.
         </div>
     </div>
     <div class="w-full lmx-auto px-12 pt-6 pb-24 md:px-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div class="">
                 
                 <p class="font-bold mb-4">
                     <a href="tel:+32491076753">+32 (0) 491 076 753</a><br />
-                    <a href="mailto:appointment@kona-interior.be">appointment@kona-interior.be</a>
+                    <a href="mailto:appointment@konavintagedesign.be">appointment@konavintagedesign.be</a>
                 </p>
                 <p class="font-bold">
                         Schoolstraat 14b,<br />9870 Machelen/Zulte (Deinze)
@@ -21,8 +21,8 @@ Please book your visit.
             </div>
             <div class="">
                 <p>
-                     <a href="{{ route('shop') }}" class="inline-block mb-1.5 uppercase tracking-widest leading-none text-base relative group py-1 transition-colors {{ request()->is('shop*') ? 'font-bold' : 'font-medium' }}">
-                        <span>Shop</span>
+                     <a href="{{ route('webshop') }}" class="inline-block mb-1.5 uppercase tracking-widest leading-none text-base relative group py-1 transition-colors {{ request()->is('webshop*') ? 'font-bold' : 'font-medium' }}">
+                        <span>Webshop</span>
                         <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-konablack -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
                     </a><br />
                     <a href="{{ route('about') }}" class="inline-block mb-1.5 uppercase tracking-widest leading-none text-base relative group py-1 transition-colors {{ request()->is('shop*') ? 'font-bold' : 'font-medium' }}">
@@ -43,10 +43,8 @@ Please book your visit.
                     </a><br />-->
                 </p>
             </div>
-            <div class="mb-0">
-            </div>
             <div class="">
-                <h4 class="mb-3">Subscribe to our newsletter for the latest updates from the studio.</h4>
+                <h4 class="mb-4">Subscribe to our newsletter for the latest updates from the studio.</h4>
                 <form class="relative flex items-center h-[40px] w-full">
                     <input type="email" 
                         placeholder="Your email" 
@@ -79,9 +77,15 @@ Please book your visit.
                 &copy; {{ date('Y') }} Kona Interior. All rights reserved.
             </div>
             
-            <div class="flex space-x-8 text-[10px] uppercase tracking-[0.2em] text-konablack">
-                <a href="#" class="hover:text-konablack-500 transition-colors">Instagram</a>
-                <a href="#" class="hover:text-konablack-500 transition-colors">Pinterest</a>
+            <div class="flex space-x-3 text-[10px] uppercase tracking-[0.2em] text-konablack">
+                <!--<a href="#" class="hover:text-konablack-500 transition-colors">Instagram</a>
+                <a href="#" class="hover:text-konablack-500 transition-colors">Pinterest</a>-->
+                <a href="https://instagram.com/kona_vintagedesign" target="_blank" class="text-konablack">
+                    <x-fab-instagram class="w-8 h-8" />
+                </a>
+                 <a href="https://facebook.com/kona.vintagedesign" target="_blank" class="text-konablack">
+                    <x-fab-facebook class="w-8 h-8" />
+                </a>
             </div>
         </div>
 </div>

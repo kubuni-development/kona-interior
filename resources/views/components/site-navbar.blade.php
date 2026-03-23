@@ -9,8 +9,8 @@
             </div>
 
             <div class="hidden md:flex space-x-4 uppercase tracking-widest text-base font-medium">
-                <a href="{{ route('shop') }}" class="relative group py-1 transition-colors {{ request()->is('shop*') ? 'font-bold' : 'font-medium' }}">
-                    <span>Shop</span>
+                <a href="{{ route('webshop') }}" class="relative group py-1 transition-colors {{ request()->is('webshop*') ? 'font-bold' : 'font-medium' }}">
+                    <span>Webhop</span>
                     <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-konablack -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
@@ -87,7 +87,7 @@
                 </div>
 
                 <nav class="space-y-8 uppercase tracking-[0.2em] text-lg font-medium text-konabeige">
-                    <a href="{{ route('shop') }}" class="block hover:text-white transition-colors {{ request()->is('shop*') ? 'font-bold' : 'font-medium' }}">Shop</a>
+                    <a href="{{ route('webshop') }}" class="block hover:text-white transition-colors {{ request()->is('webshop*') ? 'font-bold' : 'font-medium' }}">Webshop</a>
                     <a href="{{ route('about') }}" class="block hover:text-white transition-colors {{ request()->is('about*') ? 'font-bold' : 'font-medium' }}">About</a>
                     <a href="{{ route('archive') }}" class="block hover:text-white transition-colors {{ request()->is('archive*') ? 'font-bold' : 'font-medium' }}">Archive</a>
                     <a href="{{ route('terms') }}" class="block hover:text-white transition-colors {{ request()->is('terms*') ? 'font-bold' : 'font-medium' }}">Terms</a>

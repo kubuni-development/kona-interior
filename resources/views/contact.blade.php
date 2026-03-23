@@ -16,7 +16,7 @@
                     </p>
                     <p class="font-bold">
                         <a href="tel:+32491076753">+32 (0) 491 076 753</a><br />
-                        <a href="mailto:info@kona-interior.be">info@kona-interior.be</a>
+                        <a href="mailto:info@kona-interior.be">info@konavintagedesign.be</a>
                     </p>
                 </div>
                 <div class="max-w-prose">
