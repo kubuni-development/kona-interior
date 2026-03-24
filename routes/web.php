@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,4 +43,6 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     // 4. Producten (De items zelf)
     Route::resource('products', ProductController::class);
 });
+
+
 require __DIR__.'/auth.php';
